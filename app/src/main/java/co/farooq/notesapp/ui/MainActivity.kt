@@ -1,4 +1,4 @@
-package co.farooq.notesapp
+package co.farooq.notesapp.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
