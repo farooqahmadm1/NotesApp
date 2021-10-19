@@ -66,8 +66,8 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
 
     // Compose dependencies
-    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0-beta01"
-    implementation "androidx.navigation:navigation-compose:2.4.0-alpha09"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0-rc01"
+    implementation "androidx.navigation:navigation-compose:2.4.0-alpha10"
     implementation "com.google.accompanist:accompanist-flowlayout:0.17.0"
 
     // Coroutines
@@ -97,8 +97,12 @@ dependencies {
 
     // Room
     def room_version = "2.3.0"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
     implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:$room_version"
     implementation "androidx.room:room-guava:$room_version"
+
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    kapt "android.arch.lifecycle:compiler:1.1.1"
 
 }
